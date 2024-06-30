@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="main_interface">
+            <form action="#" class="enter_the_data">
+                <span>Доступна ємність акумулятора</span>
+                <div class="inputHelp">
+                    <input type="text" class="battery" placeholder="74" value="74" width="50px"> &nbsp;кВт
+                </div>
+                <span>Резерв батареї нижче якої не хочете розряджати</span>
+                <div class="inputHelp">
+                    <input type="text" class="reserve" placeholder="74" value="10" width="50px"> &nbsp;%
+                </div>
+                <span>Яку відстань плануєте проїхати</span>
+                <div class="inputHelp">
+                    <input type="text" class="distance" placeholder="420" value="420"> &nbsp;км
+                </div>
+                <span>Максимальна швидкість зарядки зарядної станції</span>
+                <div class="inputHelp">
+                    <input type="text" class="maxChargeSpeed" placeholder="60" value="60"> &nbsp;кВт/г
+                </div>
+                <span>Стан батареї на момент початку поїздки</span>
+                <div class="inputHelp">
+                    <input type="text" class="startingPercentage" placeholder="100" value="100" width="50px"> &nbsp;%
+                </div>
+                <span>До якого відсотка заряджати</span>
+                <div class="inputHelp">
+                    <input type="text" class="maxPercentageWhenCharging" placeholder="85" value="85" width="50px">
+                    &nbsp;%
+                </div>
+                <span>Додатковий час необхідний на станції</span>
+                <div class="inputHelp">
+                    <input type="text" class="stopExtraTime" placeholder="15" value="15" width="50px"> &nbsp;хв
+                </div>
+            </form>
+            <input type="button" class="run" value="Створити прогноз" name="Створити прогноз" onclick="run()">
+        </div>
+    </div>
+    <div class="bestOption">
+
+    </div>
+    <div class="results">
+        Натисніть "Створити прогноз" або додайте свій профіль через завантаження файлів 
+    </div>
+    <div class="batterycharge_levels">
+        <input type="file" class="loadJson" accept=".json" onchange="read()" placeholder="hello">
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #707070;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.app {
+    margin-top: 50px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main_interface {
+    /* background-color:lightseagreen; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 4px 7px 30px rgba(16, 112, 177, 0.3);
+    border-radius: 20px;
+    padding: 12px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+input {
+    width: 30px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.inputHelp {
+    width: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.run {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 160px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #5ad05c;
+    box-shadow: 2px 5px 15px rgba(16, 112, 177, 0.4);
+    border-radius: 9px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.bestOption {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: larger;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.report {
+    font-size: larger;
+    font-weight: 400;
+}
+
+.speed {
+    color: #5ad05c;
+}
+
+.result_element {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    margin-top: -7px;
+}
+
+.results {
+    margin: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sizeForResults {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border-top: 1px solid rgb(200, 200, 200);
+    width: 300px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.repot_small {
+    color: #a0a0a0;
+}
+
+.loadJson {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    background: #5ad05c;
+    box-shadow: 2px 5px 15px rgba(16, 112, 177, 0.4);
+    border-radius: 9px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+@media (max-width: 667px) {
+
+}
